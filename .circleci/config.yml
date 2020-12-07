@@ -7,6 +7,10 @@ jobs:
       image: ubuntu-1604:201903-01
     steps:
       - checkout
-      - matlab/install                       # previously `wget ...`
-      - matlab/run-command:                  # previously `matlab -batch ...`
-          command: "disp('Hello World')"
+      - matlab/install 
+      - matlab/run-tests:
+          test-results-junit: artifacts/test_results/matlab/results.xml
+      - store_test_results:
+          path: artifacts/test_results
+      - store_artifacts:
+          path: artifacts/
