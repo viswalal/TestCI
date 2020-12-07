@@ -10,6 +10,7 @@ jobs:
       - matlab/install 
       - matlab/run-tests:
           test-results-junit: artifacts/test_results/matlab/results.xml
+          source-folder: .;src
       - store_test_results:
           path: artifacts/test_results
       - store_artifacts:
