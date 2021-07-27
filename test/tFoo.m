@@ -4,7 +4,7 @@ classdef tFoo < matlab.unittest.TestCase
       %test code
       res = sourceFunction();
       helper.helperFoo();
-      test.verifyEqual(res,'hello');
+      test.verifyEqual(res,'hello!');
    end
   end
 end
