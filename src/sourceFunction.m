@@ -1,5 +1,4 @@
 function ret = sourceFunction()
-  %code
-  %comment
+  % dummy source function to test src-test integration
   ret = 'hello';
 end
